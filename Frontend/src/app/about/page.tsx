@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { ArrowRight, BookOpenCheck, Target, Users } from "lucide-react";
+
+export default function AboutPage() {
+  return <main className="info-page"><section className="info-hero"><span className="eyebrow">A MORE THOUGHTFUL WAY TO GROW</span><h1>Learning should open<br /><span>new possibilities.</span></h1><p>Aster Learning is a demonstration platform built around a simple idea: practical learning, clear progress, and space to grow on your own terms.</p><Link href="/courses" className="button">Explore courses <ArrowRight size={17} /></Link></section><section className="section-wrap info-values"><article><span><Target size={20} /></span><h2>Purposeful</h2><p>Focused learning paths help connect new ideas to meaningful work.</p></article><article><span><BookOpenCheck size={20} /></span><h2>Practical</h2><p>Clear lessons and thoughtful examples make skills easier to put into practice.</p></article><article><span><Users size={20} /></span><h2>Human</h2><p>Everyone’s path is different. Learn at your pace and choose what comes next.</p></article></section><div className="info-disclaimer">Aster Learning is an educational software demonstration. Course content and people shown are fictional sample content.</div></main>;
+}
